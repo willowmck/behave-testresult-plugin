@@ -1,0 +1,404 @@
+[
+{
+  "elements": [
+    {
+      "keyword": "Scenario", 
+      "location": "test/features/env_start.feature:4", 
+      "name": "Start an environment successfully", 
+      "steps": [
+        {
+          "keyword": "Given", 
+          "location": "test/features/env_start.feature:5", 
+          "match": {
+            "arguments": [], 
+            "location": "test/features/steps/env_start.py:18"
+          }, 
+          "name": "a stopped SAS environment with inventory describing host and init script order", 
+          "result": {
+            "duration": 0.0068950653076171875, 
+            "status": "passed"
+          }, 
+          "step_type": "given"
+        }, 
+        {
+          "keyword": "When", 
+          "location": "test/features/env_start.feature:6", 
+          "match": {
+            "arguments": [], 
+            "location": "test/features/steps/env_start.py:32"
+          }, 
+          "name": "I execute start", 
+          "result": {
+            "duration": 2.1258931159973145, 
+            "status": "passed"
+          }, 
+          "step_type": "when"
+        }, 
+        {
+          "keyword": "Then", 
+          "location": "test/features/env_start.feature:7", 
+          "match": {
+            "arguments": [], 
+            "location": "test/features/steps/env_start.py:41"
+          }, 
+          "name": "I would expect a message confirming all start scripts were run", 
+          "result": {
+            "duration": 0.003036975860595703, 
+            "status": "passed"
+          }, 
+          "step_type": "then"
+        }
+      ], 
+      "tags": [
+        "wip"
+      ], 
+      "type": "scenario"
+    }, 
+    {
+      "keyword": "Scenario", 
+      "location": "test/features/env_start.feature:10", 
+      "name": "Start an environment with init script errors", 
+      "steps": [
+        {
+          "keyword": "Given", 
+          "location": "test/features/env_start.feature:11", 
+          "match": {
+            "arguments": [], 
+            "location": "test/features/steps/env_start.py:50"
+          }, 
+          "name": "a stopped SAS environment that will have init script errors on startup", 
+          "result": {
+            "duration": 0.007447004318237305, 
+            "status": "passed"
+          }, 
+          "step_type": "given"
+        }, 
+        {
+          "keyword": "When", 
+          "location": "test/features/env_start.feature:12", 
+          "match": {
+            "arguments": [], 
+            "location": "test/features/steps/env_start.py:32"
+          }, 
+          "name": "I execute start", 
+          "result": {
+            "duration": 1.5676350593566895, 
+            "status": "passed"
+          }, 
+          "step_type": "when"
+        }, 
+        {
+          "keyword": "Then", 
+          "location": "test/features/env_start.feature:13", 
+          "match": {
+            "arguments": [], 
+            "location": "test/features/steps/env_start.py:64"
+          }, 
+          "name": "I would expect a message saying that init scripts had errors", 
+          "result": {
+            "duration": 0.0027899742126464844, 
+            "status": "passed"
+          }, 
+          "step_type": "then"
+        }
+      ], 
+      "tags": [
+        "wip"
+      ], 
+      "type": "scenario"
+    }
+  ], 
+  "keyword": "Feature", 
+  "location": "test/features/env_start.feature:1", 
+  "name": "Start all SAS services across an environment", 
+  "status": "passed", 
+  "tags": []
+},
+
+{
+  "elements": [
+    {
+      "keyword": "Scenario", 
+      "location": "test/features/env_status.feature:4", 
+      "name": "All processes are running", 
+      "steps": [
+        {
+          "keyword": "Given", 
+          "location": "test/features/env_status.feature:5", 
+          "match": {
+            "arguments": [], 
+            "location": "test/features/steps/env_status.py:18"
+          }, 
+          "name": "a fully running SAS environment with inventory describing the hosts", 
+          "result": {
+            "duration": 0.0076389312744140625, 
+            "status": "passed"
+          }, 
+          "step_type": "given"
+        }, 
+        {
+          "keyword": "When", 
+          "location": "test/features/env_status.feature:6", 
+          "match": {
+            "arguments": [], 
+            "location": "test/features/steps/env_status.py:80"
+          }, 
+          "name": "I execute status", 
+          "result": {
+            "duration": 2.580598831176758, 
+            "status": "passed"
+          }, 
+          "step_type": "when"
+        }, 
+        {
+          "keyword": "Then", 
+          "location": "test/features/env_status.feature:7", 
+          "match": {
+            "arguments": [], 
+            "location": "test/features/steps/env_status.py:89"
+          }, 
+          "name": "I would expect a message confirming that all services are UP", 
+          "result": {
+            "duration": 0.002618074417114258, 
+            "status": "passed"
+          }, 
+          "step_type": "then"
+        }
+      ], 
+      "tags": [
+        "wip"
+      ], 
+      "type": "scenario"
+    }, 
+    {
+      "keyword": "Scenario", 
+      "location": "test/features/env_status.feature:10", 
+      "name": "Some but not all processes are running", 
+      "steps": [
+        {
+          "keyword": "Given", 
+          "location": "test/features/env_status.feature:11", 
+          "match": {
+            "arguments": [], 
+            "location": "test/features/steps/env_status.py:32"
+          }, 
+          "name": "a partially running SAS environment with inventory describing the hosts", 
+          "result": {
+            "duration": 0.008041143417358398, 
+            "status": "passed"
+          }, 
+          "step_type": "given"
+        }, 
+        {
+          "keyword": "When", 
+          "location": "test/features/env_status.feature:12", 
+          "match": {
+            "arguments": [], 
+            "location": "test/features/steps/env_status.py:80"
+          }, 
+          "name": "I execute status", 
+          "result": {
+            "duration": 2.7836477756500244, 
+            "status": "passed"
+          }, 
+          "step_type": "when"
+        }, 
+        {
+          "keyword": "Then", 
+          "location": "test/features/env_status.feature:13", 
+          "match": {
+            "arguments": [], 
+            "location": "test/features/steps/env_status.py:98"
+          }, 
+          "name": "I would expect a message confirming that some services are UP and some DOWN", 
+          "result": {
+            "duration": 0.002824068069458008, 
+            "status": "passed"
+          }, 
+          "step_type": "then"
+        }
+      ], 
+      "tags": [
+        "wip"
+      ], 
+      "type": "scenario"
+    }, 
+    {
+      "keyword": "Scenario", 
+      "location": "test/features/env_status.feature:16", 
+      "name": "Init scripts reporting services are down, but not all processes have terminated", 
+      "steps": [
+        {
+          "keyword": "Given", 
+          "location": "test/features/env_status.feature:17", 
+          "match": {
+            "arguments": [], 
+            "location": "test/features/steps/env_status.py:46"
+          }, 
+          "name": "a SAS environment where init scripts are reporting services down, but not all processes have terminated", 
+          "result": {
+            "duration": 0.009486913681030273, 
+            "status": "passed"
+          }, 
+          "step_type": "given"
+        }, 
+        {
+          "keyword": "When", 
+          "location": "test/features/env_status.feature:18", 
+          "match": {
+            "arguments": [], 
+            "location": "test/features/steps/env_status.py:80"
+          }, 
+          "name": "I execute status", 
+          "result": {
+            "duration": 2.1916069984436035, 
+            "status": "passed"
+          }, 
+          "step_type": "when"
+        }, 
+        {
+          "keyword": "Then", 
+          "location": "test/features/env_status.feature:19", 
+          "match": {
+            "arguments": [], 
+            "location": "test/features/steps/env_status.py:107"
+          }, 
+          "name": "I would expect a message saying that lingering processes were found", 
+          "result": {
+            "duration": 0.0027370452880859375, 
+            "status": "passed"
+          }, 
+          "step_type": "then"
+        }
+      ], 
+      "tags": [
+        "wip"
+      ], 
+      "type": "scenario"
+    }, 
+    {
+      "keyword": "Scenario", 
+      "location": "test/features/env_status.feature:22", 
+      "name": "All processes are down", 
+      "steps": [
+        {
+          "keyword": "Given", 
+          "location": "test/features/env_status.feature:23", 
+          "match": {
+            "arguments": [], 
+            "location": "test/features/steps/env_status.py:63"
+          }, 
+          "name": "a fully stopped SAS environment with inventory describing the hosts", 
+          "result": {
+            "duration": 0.009969949722290039, 
+            "status": "passed"
+          }, 
+          "step_type": "given"
+        }, 
+        {
+          "keyword": "When", 
+          "location": "test/features/env_status.feature:24", 
+          "match": {
+            "arguments": [], 
+            "location": "test/features/steps/env_status.py:80"
+          }, 
+          "name": "I execute status", 
+          "result": {
+            "duration": 3.1889030933380127, 
+            "status": "passed"
+          }, 
+          "step_type": "when"
+        }, 
+        {
+          "keyword": "Then", 
+          "location": "test/features/env_status.feature:25", 
+          "match": {
+            "arguments": [], 
+            "location": "test/features/steps/env_status.py:117"
+          }, 
+          "name": "I would expect a message confirming all services are DOWN", 
+          "result": {
+            "duration": 0.002602815628051758, 
+            "status": "passed"
+          }, 
+          "step_type": "then"
+        }
+      ], 
+      "tags": [
+        "wip"
+      ], 
+      "type": "scenario"
+    }
+  ], 
+  "keyword": "Feature", 
+  "location": "test/features/env_status.feature:1", 
+  "name": "Check status on SAS processes for an environment", 
+  "status": "passed", 
+  "tags": []
+},
+
+{
+  "elements": [
+    {
+      "keyword": "Scenario", 
+      "location": "test/features/env_stop.feature:4", 
+      "name": "Stop an environment successfully", 
+      "steps": [
+        {
+          "keyword": "Given", 
+          "location": "test/features/env_stop.feature:5", 
+          "match": {
+            "arguments": [], 
+            "location": "test/features/steps/env_stop.py:18"
+          }, 
+          "name": "a running SAS environment with inventory describing host and init script order", 
+          "result": {
+            "duration": 0.008582115173339844, 
+            "status": "passed"
+          }, 
+          "step_type": "given"
+        }, 
+        {
+          "keyword": "When", 
+          "location": "test/features/env_stop.feature:6", 
+          "match": {
+            "arguments": [], 
+            "location": "test/features/steps/env_stop.py:32"
+          }, 
+          "name": "I execute stop", 
+          "result": {
+            "duration": 1.5614559650421143, 
+            "status": "passed"
+          }, 
+          "step_type": "when"
+        }, 
+        {
+          "keyword": "Then", 
+          "location": "test/features/env_stop.feature:7", 
+          "match": {
+            "arguments": [], 
+            "location": "test/features/steps/env_stop.py:41"
+          }, 
+          "name": "I would expect a message confirming all stop scripts were run", 
+          "result": {
+            "duration": 0.0026140213012695312, 
+            "status": "passed"
+          }, 
+          "step_type": "then"
+        }
+      ], 
+      "tags": [
+        "wip"
+      ], 
+      "type": "scenario"
+    }
+  ], 
+  "keyword": "Feature", 
+  "location": "test/features/env_stop.feature:1", 
+  "name": "Stop all SAS services across an environment", 
+  "status": "passed", 
+  "tags": []
+}
+]
+
+
