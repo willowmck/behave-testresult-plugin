@@ -94,7 +94,7 @@
 		<dependency>
 			<groupId>behave.gherkin</groupId>
 			<artifactId>behave-gherkin</artifactId>
-			<version>0.1</version>
+			<version>0.2-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.google.guava</groupId>
